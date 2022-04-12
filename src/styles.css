@@ -1,0 +1,64 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px;
+}
+
+.header nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+.navLink {
+  display: block;
+  margin: 0 80px;
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+}
+.navLink:hover {
+  color: rgb(255, 59, 59);
+}
+
+.heroBg {
+  display: flex;
+  height: 80vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("https://9to5mac.com/wp-content/uploads/sites/6/2021/09/macbook-air-vs-pro-comparison.jpg?quality=82&strip=all");
+  background-size: cover;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.heroBg h1 {
+  color: white;
+  font-size: 5rem;
+  font-family: sans-serif;
+}
+.basket-btn {
+  width: 100px;
+  height: 30px;
+  border: none;
+  box-shadow: 0 0 5px black;
+  background-color: cadetblue;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.basket-btn:hover {
+  transform: scale(1.1);
+}
+footer {
+  margin-top: 100px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
