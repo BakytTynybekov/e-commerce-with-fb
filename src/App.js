@@ -10,6 +10,7 @@ import DashBoard from "./Pages/DashBoard/DashBoard";
 import AddProducts from "./Pages/DashBoard/AddProducts";
 import Orders from "./Pages/DashBoard/Orders";
 import SeeProducts from "./Pages/DashBoard/SeeProducts";
+import MakeAnOrder from "./Pages/DashBoard/MakeAnOrder";
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="products" element={<AllProducts />} />
         <Route path="basket" element={<Basket />} />
+        <Route path="make-an-order" element={<MakeAnOrder />} />
         <Route path="login" element={<Login />} />
         <Route path="dashboard" element={<DashBoard />}>
           <Route path="add-products" element={<AddProducts />} />

@@ -3,6 +3,7 @@ import { useContext } from "react";
 import { CartContext } from "../../context/GeneralCard";
 import * as actions from "../../context/actions";
 import "./basket.scss";
+import { Link } from "react-router-dom";
 
 function Basket() {
   const { allProductsInCart, dispacher } = useContext(CartContext);
@@ -34,6 +35,9 @@ function Basket() {
             <button onClick={() => handleDelete(product.id)}>X</button>
           </div>
         ))}
+      </div>
+      <div>
+        <Link to="/make-an-order">Make an order</Link>
       </div>
     </div>
   );

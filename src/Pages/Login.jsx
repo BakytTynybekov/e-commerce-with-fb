@@ -10,10 +10,8 @@ function Login() {
   const [seePassword, setSeePassword] = useState(false);
   const { loginWithEmail, user, sigUpwithEmailAndPassword } =
     useContext(GeneralAuthContext);
-  console.log(user);
   const handleLogin = () => {
     loginWithEmail(loginInformation.email, loginInformation.password);
-    console.log(user);
   };
 
   return (

@@ -5,7 +5,6 @@ import { Navigate, Link, Outlet } from "react-router-dom";
 import { Divider, Grid, List, ListItem, ListItemButton } from "@mui/material";
 function DashBoard() {
   const { user } = useContext(GeneralAuthContext);
-  console.log(user);
   return (
     <div>
       {user ? (
@@ -27,8 +26,9 @@ function DashBoard() {
                 </ListItemButton>
               </List>
             </Grid>
-
-            <Outlet />
+            <Grid item xs={10}>
+              <Outlet />
+            </Grid>
           </Grid>
         </>
       ) : (
